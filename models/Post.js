@@ -26,13 +26,13 @@ Post.init(
         key: 'id',
       },
     },
-    anime_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'anime',
-        key: 'id',
-      },
-    },
+    // anime_id: {
+    //   type: DataTypes.INTEGER,
+    //   references: {
+    //     model: 'anime',
+    //     key: 'id',
+    //   },
+    // },
   },
   {
     sequelize,
