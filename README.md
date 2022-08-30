@@ -14,7 +14,7 @@ The goal of this project is to create a review board for anime with individual u
 
 [License](#license)
 
-[Contributing](#contributing)
+[Collaborators](#collaborators)
 
 [Tests](#tests)
 
@@ -33,9 +33,12 @@ The goal of this project is to create a review board for anime with individual u
 
 [![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
 
-## Contributing
+## Collaborators
 
-
+Tabitha Spencer-Salmon
+Fred Kamm
+Humberto Rico
+Wyatt Willner
     
 ## Tests
 
