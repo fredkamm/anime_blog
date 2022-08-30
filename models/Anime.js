@@ -3,7 +3,7 @@
 
 // class Anime extends Model {}
 
-<<<<<<< HEAD
+// <<<<<<< HEAD
 Anime.init(
   {
     id: {
@@ -20,6 +20,10 @@ Anime.init(
       type: DataTypes.INTEGER,
       allowNull: false,
     },
+    apiReviews: { // getAnimeReviews
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
   },
   {
     sequelize,
@@ -29,7 +33,7 @@ Anime.init(
     modelName: 'anime',
   }
 );
-=======
+// =======
 // Anime.init(
 //   {
 //     id: {
@@ -51,6 +55,6 @@ Anime.init(
 //     modelName: 'anime',
 //   }
 // );
->>>>>>> 7ce1a70e718cbc5a4e9f4b8d9a111dd8e84c1834
+// >>>>>>> 7ce1a70e718cbc5a4e9f4b8d9a111dd8e84c1834
 
 // module.exports = Anime;
