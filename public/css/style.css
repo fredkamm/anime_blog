@@ -1,0 +1,16 @@
+nav {
+    background-color: bisque;
+    border-bottom: black solid 2px;
+}
+
+.nav-search {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#search-btn {
+    background-color: white;
+    color: black;
+    margin-left: 10%;
+}
