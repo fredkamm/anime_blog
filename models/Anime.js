@@ -15,6 +15,10 @@ Anime.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    picture: { // getAnimePictures
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
   },
   {
     sequelize,
