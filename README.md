@@ -27,7 +27,7 @@ The goal of this project is to create a review board for anime with individual u
     
 ## Usage
     
-
+Deployed on heroku.
     
 ## License 
 
@@ -35,10 +35,10 @@ The goal of this project is to create a review board for anime with individual u
 
 ## Collaborators
 
-Tabitha Spencer-Salmon
-Fred Kamm
-Humberto Rico
-Wyatt Willner
+Tabitha Spencer-Salmon <br/>
+Fred Kamm <br/>
+Humberto Rico <br/>
+Wyatt Willner <br/>
     
 ## Tests
 
@@ -46,6 +46,12 @@ Wyatt Willner
     
 ## Questions?
 
-
-
 [https://github.com/fredkamm/anime_blog](https://github.com/fredkamm/anime_blog)
+
+[https://github.com/TabithaLy](https://github.com/TabithaLy)
+
+[https://github.com/fredkamm](https://github.com/fredkamm)
+
+[https://github.com/Humbertorico](https://github.com/Humbertorico)
+
+[https://github.com/wyattwillner55](https://github.com/wyattwillner55)

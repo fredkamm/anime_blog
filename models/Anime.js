@@ -1,7 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
-
-class Anime extends Model {}
 Anime.init(
   {
     id: {
@@ -15,6 +13,10 @@ Anime.init(
       allowNull: false,
     },
     picture: { // getAnimePictures
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    apiReviews: { // getAnimeReviews
       type: DataTypes.INTEGER,
       allowNull: false,
     },
