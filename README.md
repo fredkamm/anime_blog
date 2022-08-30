@@ -27,7 +27,7 @@ The goal of this project is to create a review board for anime with individual u
     
 ## Usage
     
-
+Deployed on heroku.
     
 ## License 
 
