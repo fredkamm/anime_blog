@@ -17,11 +17,11 @@ Anime.init(
     },
     picture: { // getAnimePictures
       type: DataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
     },
     apiReviews: { // getAnimeReviews
       type: DataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
     },
   },
   {
