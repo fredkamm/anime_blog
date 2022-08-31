@@ -1,0 +1,44 @@
+var animeSeries =["Full Metal Alchemist Brotherhood","One Piece", "Bleach", "Dragon Ball Z","Dragon Ball"," Naruto Shippuded", "Naruto","Full Metal Alchemist"]
+
+[
+    {
+        "title": "Full Metal Alchemist Brotherhood",
+        "picture": "",
+        "apiReviews": "", 
+    }
+    {
+        "title": "One Piece",
+        "picture": "",
+        "apiReviews": "", 
+    }
+    {
+        "title": "Bleach",
+        "picture": "",
+        "apiReviews": "", 
+    }
+    {
+        "title": "Dragon Ball Z",
+        "picture": "",
+        "apiReviews": "", 
+    }
+    {
+        "title": "Dragon Ball",
+        "picture": "",
+        "apiReviews": "", 
+    }
+    {
+        "title": "Naruto Shippuded",
+        "picture": "",
+        "apiReviews": "", 
+    }
+    {
+        "title": "Naruto",
+        "picture": "",
+        "apiReviews": "", 
+    }
+    {
+        "title": "Full Metal Alchemist",
+        "picture": "",
+        "apiReviews": "", 
+    }
+]
