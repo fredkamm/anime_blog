@@ -28,4 +28,8 @@ router.get('/signup', (req, res) => {
   res.render('signup');
 });
 
+router.get('/profile', (req, res) => {
+  // render the profile page when user clicks profile
+res.render('profile');
+});
 module.exports = router;
