@@ -22,13 +22,13 @@
   <div class="col-md-6 project-list">
     <h3>Recent Reviews:</h3>
 
-    {{#each projects as |project|}}
+    {{#each post as |post|}}
     <div class="row mb-2">
       <div class="col-md-8">
-        <h4><a href="/post/{{post.id}}">{{post.name}}</a></h4>
+        <h4><a href="/post/{{id}}">{{title}}</a></h4>
       </div>
       <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{project.id}}">DELETE</button>
+        <button class="btn btn-sm btn-danger" data-id="{{id}}">DELETE</button>
       </div>
     </div>
     {{/each}}
@@ -36,4 +36,4 @@
   {{/if}}
 </div>
 
-<script src="/js/profile.js"></script>
+<script src="./js/profile.js"></script>
