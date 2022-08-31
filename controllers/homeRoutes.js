@@ -6,8 +6,8 @@ router.get('/', async (req, res) => {
     res.render('homepage');
 });
 
-router.get('/post/:id', async (req, res) => {
-
+router.get('/post/', async (req, res) => {
+    res.render('indvidualAnime');
 });
 
 router.get('/login', (req, res) => {
