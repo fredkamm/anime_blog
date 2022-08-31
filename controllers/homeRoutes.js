@@ -6,8 +6,12 @@ router.get('/', async (req, res) => {
     res.render('homepage');
 });
 
-router.get('/post/', async (req, res) => {
+router.get('/anime', async (req, res) => {
     res.render('indvidualAnime');
+});
+
+router.get('/profile', async (req, res) => {
+    res.render('profile');
 });
 
 router.get('/login', (req, res) => {
