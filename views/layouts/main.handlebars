@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,6 +12,13 @@
     <nav>
         <div class="container is-max-widescreen">
             <div class="nav-search">
+                <a href="/"><h1></h1>Anime blog</h1></a>
+                <a href="/profile">profile</a>
+                {{#if logged_in}}
+                <a class="no-button" id="logout">logout</a>
+                {{else}}
+                <a href="/login">login</a>
+                {{/if}}
                 <input id="search-input" class="input" type="text" placeholder="search of Anime">
                 <button id="search-btn" class="button">Search</button>
             </div>
@@ -22,7 +28,7 @@
 
     <main>
 
-      {{{ body }}}
+        {{{ body }}}
 
     </main>
 </body>
