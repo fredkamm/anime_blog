@@ -1,7 +1,11 @@
 /* CSS for the nav bar */
+
+*{
+    background-color: bisque;
+}
 nav {
     background-color: bisque;
-    border-bottom: black solid 2px;
+    border-bottom: rgb(255, 255, 255) solid 2px;
 }
 
 .nav-search {
@@ -35,6 +39,34 @@ nav {
 header {
     display: flex;
     padding-right: 30% ;
+}
+
+.title {
+    text-align: center;
+    background-color: bisque;
+}
+
+.Img {
+/* display: flex;
+text-decoration: none;
+margin-left: 27%; */
+display: grid;
+grid-auto-flow : column;
+grid-column-gap: 10px;
+
+}
+
+.notification.is-info {
+    background-color: bisque;
+    color: #fff;
+}
+
+.One{
+    font-size: larger;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-weight: bold;
 }
 /* above is css for the nav bar */
 
