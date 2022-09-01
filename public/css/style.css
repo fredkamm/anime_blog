@@ -1,8 +1,9 @@
 /* CSS for the nav bar */
 
-*{
+/* *{
     background-color: bisque;
-}
+} */
+
 nav {
     background-color: bisque;
     border-bottom: rgb(255, 255, 255) solid 2px;
@@ -76,23 +77,34 @@ grid-column-gap: 150px;
     display: grid;
     font-size: larger;
     font-family: 'Courier New', Courier, monospace;
-    color: #fff;
+    color: black;
     font-weight: bold;
     text-align: center;
 }
 
 .hello{
-    color: #fff;
+    color: black;
     font-weight: bold;
     
 
 }
 
 .nR{
-color: #fff;
+color: black;
 font-weight: bold;
 text-align: center;
 }
+
+.new-review {
+padding-left: 10%;
+}
+
+.reviews-word{
+font-size: larger;
+font-weight: bold;
+font-family: 'Courier New', Courier, monospace
+}
+
 
 /* above code is css for the profile handlebar */
 
