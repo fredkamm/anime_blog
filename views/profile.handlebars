@@ -1,6 +1,7 @@
 {{!-- modified from UPENN-VIRT-FSF-FT-07-2022-U-LOLC\14-MVC\01-Activities\28-Stu_Mini-Project\Main\views\profile.handlebars --}}
 <div class="row mt-4">
   <div class="col-md-6">
+    <h2>hello {{username}}</h2>
     <h3>Create a new Review:</h3>
 
     <form class="form new-project-form">
@@ -17,23 +18,25 @@
       </div>
     </form>
   </div>
-
-  {{#if post.length}}
+{{log this}}
+  {{#if posts.length}}
   <div class="col-md-6 project-list">
     <h3>Recent Reviews:</h3>
 
-    {{#each post as |post|}}
+    {{#each posts as |post|}}
     <div class="row mb-2">
       <div class="col-md-8">
-        <h4><a href="/post/{{id}}">{{title}}</a></h4>
+        <h4><a href="/post/{{post.id}}">{{post.title}}</a></h4>
+        <p class="card-body">{{post.post_text}}</p>
       </div>
       <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{id}}">DELETE</button>
+        <button class="btn btn-sm btn-danger" data-id="{{post.id}}">DELETE</button>
       </div>
     </div>
     {{/each}}
   </div>
   {{/if}}
 </div>
+
 
 <script src="./js/profile.js"></script>
