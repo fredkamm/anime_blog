@@ -36,5 +36,11 @@ header {
     display: flex;
     padding-right: 30% ;
 }
+
+.Img {
+display: flex;
+text-decoration: none;
+margin-left: 27%;
+}
 /* above is css for the nav bar */
 
