@@ -2,7 +2,7 @@
     
 ## Description
     
-The goal of this project is to create a review board for anime with individual user profiles and future recommendations based on the level of engagement with a particular intellectual property. There will be a sign-up page, a login page, a profile page, and a trending page. The trending page will be accessible to anyone irrespective of having a user profile but will be read-only unless the individual has one. Users will see a text box where they can write their anime review and have the option of posting via a submit button that, on click, will display the new post on their profile page. The profile pge will have all of the usaer’s previous reviews in order starting with their most recent review. Users will also have the option of editing previous reviews on their profile page.
+The goal of this project is to create a review board for anime with individual user profiles and future recommendations based on the level of engagement with a particular intellectual property. There will be a sign-up page, a login page, a profile page, and a trending page. The trending page will be accessible to anyone irrespective of having a user profile but will be read-only unless the individual has one. Users will see a text box where they can write their anime review and have the option of posting via a create button that, on click, will display the new post on their profile page. The profile page will have all of the usaer’s previous reviews in order starting with their most recent review. Users will also have the option of deleting previous reviews from their profile page.
     
 ## Table of Contents
 
