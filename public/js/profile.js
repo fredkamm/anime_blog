@@ -44,6 +44,6 @@ const profileFormHandler = async (event) => {
     .querySelector('.new-project-form')
     .addEventListener('submit', profileFormHandler);
   
-  // document
-  //   .querySelector('.project-list')
-  //   .addEventListener('click', delButtonHandler);
+  document
+    .querySelector('.project-list')
+    .addEventListener('click', delButtonHandler);
