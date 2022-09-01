@@ -8,7 +8,7 @@ The goal of this project is to create a review board for anime with individual u
 
 [Description](#description)
 
-[Installation](#installation)
+[Link](#link)
 
 [Usage](#usage)
 
@@ -16,14 +16,13 @@ The goal of this project is to create a review board for anime with individual u
 
 [Collaborators](#collaborators)
 
-[Tests](#tests)
-
 [Questions](#questions)
 
+## Link
 
-## Installation
+Deployed app: [https://whispering-wildwood-37950.herokuapp.com/](https://whispering-wildwood-37950.herokuapp.com/)
 
-
+GitHub URL: [https://github.com/fredkamm/anime_blog](https://github.com/fredkamm/anime_blog)
     
 ## Usage
     
@@ -40,13 +39,7 @@ Fred Kamm <br/>
 Humberto Rico <br/>
 Wyatt Willner <br/>
     
-## Tests
-
-
-    
 ## Questions?
-
-[https://github.com/fredkamm/anime_blog](https://github.com/fredkamm/anime_blog)
 
 [https://github.com/TabithaLy](https://github.com/TabithaLy)
 
