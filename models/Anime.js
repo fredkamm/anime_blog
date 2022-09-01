@@ -15,11 +15,11 @@ Anime.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    picture: { // getAnimePictures
+    images_url: { // getAnimePictures
       type: DataTypes.INTEGER,
       allowNull: true,
     },
-    apiReviews: { // getAnimeReviews
+    synopsis: { // getAnimeReviews
       type: DataTypes.INTEGER,
       allowNull: true,
     },
