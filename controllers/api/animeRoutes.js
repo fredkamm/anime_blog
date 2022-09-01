@@ -6,7 +6,7 @@ router.get('/', async (req, res) => {
     // find all users
     try {
       const animeData = await Anime.findAll({});
-      if (!postData) {
+      if (!animeData) {
         res.status(404).json({ message: 'No category with this id!' });
         return;
       }
