@@ -7,7 +7,8 @@ const profileFormHandler = async (event) => {
     const review = document.querySelector('#project-desc').value.trim();
   
     if (title && review) {
-      const response = await fetch(`/api/post`, {
+      const response = await fetch(`/api/post`, 
+      {
         method: 'POST',
         body: JSON.stringify({ title, review }),
         headers: {
@@ -43,6 +44,6 @@ const profileFormHandler = async (event) => {
     .querySelector('.new-project-form')
     .addEventListener('submit', profileFormHandler);
   
-  document
-    .querySelector('.project-list')
-    .addEventListener('click', delButtonHandler);
+  // document
+  //   .querySelector('.project-list')
+  //   .addEventListener('click', delButtonHandler);
