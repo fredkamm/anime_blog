@@ -32,9 +32,12 @@ router.get('/:id', async (req, res) => {
 
 router.post('/', withAuth, async (req, res) => {
   try {
+    console.log(req.body)
     const newPost = await Post.create({
-      ...req.body,
+      title: req.body.title,
+      post_text: req.body.review,
       user_id: req.session.user_id,
+      // anime_id: req.session.user_id,
     });
 
     res.status(200).json(newPost);
