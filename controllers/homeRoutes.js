@@ -3,15 +3,19 @@ const { User, Post } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
-    res.render('homepage');
+    res.render('homepage', {
+      logged_in: req.session.logged_in
+    });
 });
 
 router.get('/anime', async (req, res) => {
     res.render('indvidualAnime');
 });
 
-router.get('/profile', async (req, res) => {
-    res.render('profile');
+router.get('/profile',withAuth, async (req, res) => {
+    res.render('profile', {
+      logged_in: req.session.logged_in
+    });
 });
 
 router.get('/login', (req, res) => {
@@ -26,10 +30,5 @@ router.get('/login', (req, res) => {
 router.get('/signup', (req, res) => {
       // render the signup page when user clicks to sign up
   res.render('signup');
-});
-
-router.get('/profile', (req, res) => {
-  // render the profile page when user clicks profile
-res.render('profile');
 });
 module.exports = router;

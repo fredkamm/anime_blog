@@ -1,3 +1,4 @@
+/* CSS for the nav bar */
 nav {
     background-color: bisque;
     border-bottom: black solid 2px;
@@ -12,5 +13,28 @@ nav {
 #search-btn {
     background-color: white;
     color: black;
-    margin-left: 10%;
+    margin-left: 1%;
 }
+
+#search-input {
+    width: 50%;
+    margin-left: 20%;
+}
+
+.nav-links {
+    display: flex;
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 25%;
+}
+
+.navLinks {
+    padding-right: 15%;
+}
+
+header {
+    display: flex;
+    padding-right: 30% ;
+}
+/* above is css for the nav bar */
+
