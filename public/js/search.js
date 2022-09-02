@@ -1,40 +1,29 @@
-const searchBtnEl = document.querySelector('#search-btn');
+let searchBtnEl = document.getElementById('search-btn');
 const searchInputEl = document.querySelector('#search-input');
-const homepageURL = window.location.href;
-let topAnime;
-let searchData;
 
 //function that calls the relevant functions for searching an anime and displaying it
 //and assigns the homepage as the location when search button is pressed
 function searchAndDisplay() {
-    location.assign(homepageURL);
-    searchAnime(filterInput(searchInputEl.textContent));
+    console.log('search and display');
+    searchAnime(filterInput(searchInputEl.value));
     displaySearch();
 }
 
-//function that calls all the relevant functions for setting up the homepage top anime display
-function setUpHomepage() {
-    getTopAnime();
-    for (i = 0; i < 4; i++) {
-        displayHomepageAnime(i);
-    }
-}
 
-//fetches the top anime from jikan api
-function getTopAnime(){
-    fetch(`https://api.jikan.moe/v3/top/anime/1/bypopularity`)
-    .then(topAnime = response.JSON().slice(0,4));
-}
 
 //searches the api for the anime
 function searchAnime(searchedAnime) {
+    console.log(searchedAnime);
     fetch('https://api.jikan.moe/v3/search/anime?q=' + searchedAnime + '&order_by=title&sort=asc&limit=1')
-    .then(function(response){
-        if (!response.ok) {
-            throw response.JSON();
-        }
-       searchData = response.JSON;
-    })
+        .then(function(response){
+            if (!response.ok) {
+                throw response.json();
+            }
+            return response.json();
+        })
+        .then(function(searchedData){
+            window.localStorage.setItem('searchedAnime' , JSON.stringify(searchedData.results));
+        })
 }
 
 //replaces unsearchable characters in the string with characters that can be used in a search
@@ -44,35 +33,16 @@ function filterInput(inputString) {
 
 //displays the searched anime
 function displaySearch() {
-    document.querySelector('#aTitle').textContent = 'Title:' + searchData.title;
-    document.querySelector('#synopsis').textContent = 'Synopsis:' + searchData.synopsis;
-    document.querySelector('#episodes').textContent = 'Episodes:' + searchData.episodes;
-    document.querySelector('#malScore').textContent = 'Rating:' + searchData.score;
-    document.querySelector('#malUrl').setAttribute('href' , searchData.url);
-    document.querySelector('#malUrl').setAttribute('target' , searchData.title);
-    document.querySelector('aPoster').setAttribute('src' , searchData.image_url);
+    let animeSearch = JSON.parse(window.localStorage.getItem('searchedAnime'));
+    console.log(animeSearch);
+    document.querySelector('#aTitle').textContent = 'Title: ' + animeSearch[0].title;
+    document.querySelector('#synopsis').textContent = 'Synopsis: ' + animeSearch[0].synopsis;
+    document.querySelector('#episodes').textContent = 'Episodes: ' + animeSearch[0].episodes;
+    document.querySelector('#malScore').textContent = 'Rating: ' + animeSearch[0].score;
+    document.querySelector('#malUrl').setAttribute('href' , animeSearch[0].url);
+    document.querySelector('#malUrl').textContent = animeSearch[0].title;
+    document.querySelector('#aPoster').setAttribute('src' , animeSearch[0].image_url);
+    window.localStorage.removeItem('searchedAnime');
 }
 
-//displays the top anime in their locations
-function displayHomepageAnime(animeNumber){
-    const anime = JSON.parse(window.localStorage.getItem('Anime'));
-    let animeObj = '#' + animeNumber;
-    let animeImage = animeNumber + 'i';
-    document.querySelector(animeObj).setAttribute('href' , topAnime[animeNumber.url]);
-    document.querySelector(animeObj).setAttribute('target' , topAnime[animeNumber.title]);
-    document.querySelector(animeObj).setAttribute('src' , topAnime[animeNumber.image_url]);
-}
-
-//clears display
-function clearDisplayData() {
-    document.querySelector('#aTitle').textContent = 'Title:' + '';
-    document.querySelector('#synopsis').textContent = 'Synopsis:' + '';
-    document.querySelector('#episodes').textContent = 'Episodes:' + '';
-    document.querySelector('#malScore').textContent = 'Rating:' + '';
-    document.querySelector('#malUrl').setAttribute('href' , '');
-    document.querySelector('#malUrl').setAttribute('target' , '');
-    document.querySelector('aPoster').setAttribute('src' , '');
-}
-
-setUpHomepage();
-searchBtnEl.addEventListener('click', searchAndDisplay());
+searchBtnEl.addEventListener('click', searchAndDisplay);
